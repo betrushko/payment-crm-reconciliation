@@ -1,0 +1,17 @@
+SELECT
+  Id,
+  Name,
+  RecordTypeId,
+  npe03__Contact__c,
+  Transaction_ID_Unique__c,
+  npe03__Amount__c,
+  npe03__Installment_Period__c,
+  npe03__Open_Ended_Status__c,
+  npe03__Date_Established__c,
+  npe03__Next_Payment_Date__c,
+  npe03__Recurring_Donation_Campaign__c,
+  CreatedDate,
+  LastModifiedDate
+FROM npe03__Recurring_Donation__c
+WHERE Transaction_ID_Unique__c != null
+ORDER BY CreatedDate

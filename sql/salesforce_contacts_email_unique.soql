@@ -1,0 +1,11 @@
+SELECT
+  Id,
+  Name,
+  Email,
+  Email_Unique__c,
+  RecordTypeId,
+  CreatedDate,
+  LastModifiedDate
+FROM Contact
+WHERE Email_Unique__c != null
+ORDER BY CreatedDate

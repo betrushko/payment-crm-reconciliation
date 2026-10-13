@@ -1,0 +1,25 @@
+SELECT
+  Id,
+  Name,
+  Auth__c,
+  CloseDate,
+  StageName,
+  Motivo_de_rechazo__c,
+  Tipo_de_Rechazo__c,
+  Amount,
+  CurrencyIsoCode,
+  CreatedDate,
+  LastModifiedDate,
+  RecordTypeId,
+  CampaignId,
+  Medio_de_Pago__c,
+  ContactId,
+  npsp__Primary_Contact__c,
+  npe03__Recurring_Donation__c,
+  npsp__Recurring_Donation_Installment_Number__c,
+  OwnerId
+FROM Opportunity
+WHERE CloseDate >= 2026-01-01
+  AND CloseDate <= 2026-12-31
+  AND Auth__c != null
+ORDER BY CloseDate, CreatedDate

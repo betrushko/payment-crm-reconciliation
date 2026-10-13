@@ -1,0 +1,18 @@
+{
+  "gcp_project": "example-project",
+  "gcp_job_project": "example-project",
+  "gcp_auth_mode": "gcloud_access_token",
+  "gcp_key_path": "",
+  "bq_cmd": "bq.cmd",
+  "sf_cmd": "sf.cmd",
+  "sf_alias": "DEMO_SANDBOX",
+  "sf_instance_url": "https://example.my.salesforce.com",
+  "year": 2026,
+  "lookback_days": 14,
+  "state_path": "state/reconciliation_state.json",
+  "raw_dir": "data/raw",
+  "processed_dir": "data/processed",
+  "outputs_dir": "outputs",
+  "include_audit_source_sheets": false,
+  "salesforce_scope_batch_size": 400
+}
